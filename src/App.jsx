@@ -29,7 +29,7 @@ const playersPromise =fetchPlayers()
             </div>
 
 
-<Suspense fallback={<span className="loading loading-dots loading-xl"></span>}>
+<Suspense>
   <AvailablePlayers playersPromise={playersPromise}></AvailablePlayers>
 </Suspense>
 
