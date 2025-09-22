@@ -7,12 +7,13 @@ import SelectedPlayers from './components/SelectedPlayers/SelectedPlayers'
 import { Suspense } from 'react'
 
 const fetchPlayers = async () =>{
-  const res = await fetch("/public.json")
+  const res = await fetch("/public/players.json")
   return res.json()
 }
 function App() {
 
 const playersPromise =fetchPlayers()
+
   return (
     <>
       <div className="navbar max-w-[1200px] mx-auto">
